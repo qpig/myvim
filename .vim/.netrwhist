@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/root/FAS/manager/rpmbuild/SOURCES/Eji/etc/cron.minly'
+let g:netrw_dirhist_2='/etc/logrotate.d'
+let g:netrw_dirhist_3='/root/FAS/manager'
+let g:netrw_dirhist_4='/root/.vim/macros'
+let g:netrw_dirhist_5='/root/FAS/manager/rpmbuild/specs'
+let g:netrw_dirhist_6='/etc/rc.d'
+let g:netrw_dirhist_7='/etc/udev/makedev.d'
+let g:netrw_dirhist_8='/tmp'
+let g:netrw_dirhist_9='/tmp/zookeeper-3.4.5/src/c/docs/html'
