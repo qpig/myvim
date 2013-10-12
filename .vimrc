@@ -15,7 +15,8 @@ set shortmess=alI
 set nostartofline
 set encoding=utf-8
 set fileencodings=utf-8,gbk,gb2312,gb18030
-set errorformat=%*\\d>%f(%l)\ :\ %t%[A-z]%#\ %m
+"" if set this quickfix will can't run
+"set errorformat=%*\\d>%f(%l)\ :\ %t%[A-z]%#\ %m 
 set nocompatible
 filetype on
 filetype plugin indent on
