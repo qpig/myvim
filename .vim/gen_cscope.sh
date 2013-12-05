@@ -1,5 +1,6 @@
 #! /bin/bash
 #path=`pwd`
+path=/home/pig/memcached-1.4.15
 data_path=$HOME/.vim
 
 echo generate cscope.out
@@ -10,4 +11,8 @@ mv -f cscope.* $data_path
 #ctags --c-kinds=+p --fields=+S -R /usr/include/
 echo generate tags
 sudo ctags -R --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q $path
-mv -f tags $HOME/.vim/tags
+mv -f tags $data_path
+
+echo generate TAGS
+sudo etags -i $HOME/.vim/cscope.files
+mv -f TAGS $data_path
