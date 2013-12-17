@@ -32,6 +32,10 @@ set bsdir=buffer
 set noautochdir "bu自动设置目录为正在编辑的文件所在的目录 
 set nobackup
 set noswapfile
+"" y 即可复制系统剪贴板内容
+set clipboard=unnamed
+"" stardict sdvc
+nmap ,l : !sdcv -n <C-R>=expand("<cword>")<CR><CR>
 
 ""ctags
 set tags+=$HOME/.vim/tags
