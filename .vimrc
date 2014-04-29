@@ -14,6 +14,7 @@ set modelines=3
 set shortmess=alI
 set nostartofline
 set encoding=utf-8
+se wildmenu "开启搜索小窗口
 set fileencodings=utf-8,gbk,gb2312,gb18030
 "" if set this quickfix will can't run
 "set errorformat=%*\\d>%f(%l)\ :\ %t%[A-z]%#\ %m 
@@ -39,12 +40,11 @@ nmap ,l : !sdcv -n <C-R>=expand("<cword>")<CR><CR>
 
 ""ctags
 set tags+=$HOME/.vim/tags
-"set tags+=/root/.vim/general_include/tags
-"set tags+=/root/.vim/stl_src/tags
+set tags+=/root/.vim/general_include/tags
+set tags+=/root/.vim/stl_src/tags
 "set tags+=/root/.vim/gtest-1.6.0/tags
 "set tags+=/root/.vim/glibc-2.12.1/tags
 "set tags+=/root/.vim/glib-2.0/tags
-"set tags+=/usr/include/tags
 "set tags+=/root/.vim/cppunit_src/tags
 
 ""taglist
@@ -131,7 +131,7 @@ map <silent> <F9> : NERDTreeToggle <CR>
 imap <silent> <F9> : NERDTreeToggle <CR>
 map <silent> <F10> : TlistToggle<CR>
 imap <silent> <F10> : TlistToggle<CR>
-map <silent> <F12> :!$HOME/.vim/gen_cscope.sh<CR>
+map <silent> <F12> :!$HOME/.vim/gen_cscope.sh<CR> :cs reset<CR>
 
 ""gdb 调试
 let g:vimgdb_debug_file = ""

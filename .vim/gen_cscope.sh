@@ -1,5 +1,9 @@
 #! /bin/bash
-PATHS=(/home/pig/memcached-1.4.15)
+PATHS=( \
+# 	/home/pig/workspace/seserver/branches/SEServer_ForRefactor \
+	/home/pig/workspace/memcached-1.4.15 \
+ 	/home/pig/workspace/seserver/trunk \
+	)
 data_path=$HOME/.vim
 
 echo generate cscope.out
